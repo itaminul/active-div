@@ -1,0 +1,26 @@
+<style>
+    .active {
+        background: white;
+        height: 70px;
+        border-radius: 100px;
+        color: white;
+        border-color: #02bb8c;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+    }
+</style>
+<div class="executive">
+    <span class="active">
+        <p><a href="#" style="color: black"> Button </a></p>
+    </span>
+</div>
+
+<script>
+    // on click of button
+    $(document).on('click', '.executive p', function () {
+        //remove active class
+        $('p').removeClass('active');
+        //add active class
+        $(this).addClass('active');
+    })
+</script>
